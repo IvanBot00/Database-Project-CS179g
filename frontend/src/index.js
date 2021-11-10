@@ -4,9 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import AvgratingsRType from './components/avgratingsRType';
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <AvgratingsRType />
   </React.StrictMode>,
   document.getElementById('root')
 );
