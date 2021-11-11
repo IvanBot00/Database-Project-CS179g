@@ -7,7 +7,7 @@ import './index.css';
 import App from './App';
 
 import { 
-    BrowserRouter, 
+    BrowserRouter as Router, 
     Switch,
     Route,
 } from 'react-router-dom';
@@ -19,24 +19,28 @@ import { Container } from 'react-bootstrap'
 import { 
     UserPage,
     BusinessesPage,
+    UserProfilePage,
 } from './Pages'
 
 
 ReactDOM.render(
-    <BrowserRouter>
+    <Router>
         <NavigationBar />
         <Container>
             <Switch>
+                <Route path='/user/:id'>
+                    <UserProfilePage />
+                </Route>
                 <Route exact path='/user'>
                     <UserPage />
                 </Route>
                 <Route path='/business'>
                     <BusinessesPage />
                 </Route>
-                {/* <Route path='/'>
+                <Route path='/'>
                     <App />
-                </Route> */}
+                </Route>
             </Switch>
         </Container>
-    </BrowserRouter>
+    </Router>
 , document.getElementById('root'));
