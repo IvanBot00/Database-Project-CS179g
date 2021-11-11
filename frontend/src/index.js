@@ -1,4 +1,6 @@
-import './bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';  
+// import './bootstrap.min.css';
+import './bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -12,17 +14,23 @@ import {
 
 import { NavigationBar } from './Navigation'
 
+import { Container } from 'react-bootstrap'
+
 import { 
     ReviewsPage,
+    BusinessesPage,
 } from './Pages'
 
 
 ReactDOM.render(
     <BrowserRouter>
         <NavigationBar />
-        <Routes>
-            <Route path="/reviews" element={<ReviewsPage />} />
-            <Route path="/" element={<App />} />
-        </Routes>
+        <Container>
+            <Routes>
+                <Route path='/reviews' element={<ReviewsPage />} />
+                <Route path='businesses' element={<BusinessesPage />} />
+                <Route path="/" element={<App />} />
+            </Routes>
+        </Container>
     </BrowserRouter>
 , document.getElementById('root'));
