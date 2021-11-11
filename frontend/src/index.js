@@ -8,8 +8,8 @@ import App from './App';
 
 import { 
     BrowserRouter, 
+    Switch,
     Route,
-    Routes,
 } from 'react-router-dom';
 
 import { NavigationBar } from './Navigation'
@@ -26,11 +26,17 @@ ReactDOM.render(
     <BrowserRouter>
         <NavigationBar />
         <Container>
-            <Routes>
-                <Route path='/users' element={<UserPage />} />
-                <Route path='businesses' element={<BusinessesPage />} />
-                <Route path="/" element={<App />} />
-            </Routes>
+            <Switch>
+                <Route exact path='/user'>
+                    <UserPage />
+                </Route>
+                <Route path='/business'>
+                    <BusinessesPage />
+                </Route>
+                {/* <Route path='/'>
+                    <App />
+                </Route> */}
+            </Switch>
         </Container>
     </BrowserRouter>
 , document.getElementById('root'));

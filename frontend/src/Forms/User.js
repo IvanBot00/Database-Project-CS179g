@@ -5,9 +5,16 @@ import {
   Button
 } from 'react-bootstrap';
 
+import { Redirect } from 'react-router-dom';
+
 function User() {
+
+  function onSubmit() {
+    // <Redirect to='/search' />
+  }
+
   return (
-    <Form>
+    <Form onSubmit={onSubmit}>
       <Row>
         <Col>
           <Form.Group>

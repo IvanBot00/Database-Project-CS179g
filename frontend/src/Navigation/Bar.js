@@ -4,17 +4,23 @@ import {
     Nav
 } from 'react-bootstrap';
 
+import { LinkContainer } from 'react-router-bootstrap';
+
 import { Link } from 'react-router-dom';
 
 function Bar() {
     return (
         <Navbar className='navbar navbar-expand-lg navbar-dark bg-primary' variant='dark'>
             <Container>
-                <Nav.Item>
-                    <Link to='/' className='nav-brand'>Home</Link>
-                </Nav.Item>
-                <Link to='/users' className='nav-link'>Users</Link>
-                <Link to='/businesses' className='nav-link'>Businesses</Link>
+                <LinkContainer to='/'>
+                    <Nav.Link>Home</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='user'>
+                    <Nav.Link>Users</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to='business'>
+                    <Nav.Link>Businesses</Nav.Link>
+                </LinkContainer>
             </Container>
         </Navbar>
     )
