@@ -22,6 +22,20 @@ function Review() {
           </Form.Group>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <Form.Group>
+            <Form.Label>Minimum Stars</Form.Label>
+            <Form.Control type='number' />
+          </Form.Group>
+        </Col>
+        <Col>
+          <Form.Group>
+            <Form.Label>Maximum Stars</Form.Label>
+            <Form.Control type='number' />
+          </Form.Group>
+        </Col>
+      </Row>
       <div className='divider' />
       <Button variant='primary' type='submit'>
         Search

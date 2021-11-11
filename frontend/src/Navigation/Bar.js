@@ -13,7 +13,7 @@ function Bar() {
                 <Nav.Item>
                     <Link to='/' className='nav-brand'>Home</Link>
                 </Nav.Item>
-                <Link to='/reviews' className='nav-link'>Reviews</Link>
+                <Link to='/users' className='nav-link'>Users</Link>
                 <Link to='/businesses' className='nav-link'>Businesses</Link>
             </Container>
         </Navbar>

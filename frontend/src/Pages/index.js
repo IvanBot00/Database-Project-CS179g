@@ -1,9 +1,9 @@
 import Home from './Home'
 import Businesses from './Businesses'
-import Reviews from './Reviews'
+import User from './User'
 
 export {
     Home as HomePage,
-    Reviews as ReviewsPage,
+    User as UserPage,
     Businesses as BusinessesPage,
 }

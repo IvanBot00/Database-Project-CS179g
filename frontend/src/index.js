@@ -17,7 +17,7 @@ import { NavigationBar } from './Navigation'
 import { Container } from 'react-bootstrap'
 
 import { 
-    ReviewsPage,
+    UserPage,
     BusinessesPage,
 } from './Pages'
 
@@ -27,7 +27,7 @@ ReactDOM.render(
         <NavigationBar />
         <Container>
             <Routes>
-                <Route path='/reviews' element={<ReviewsPage />} />
+                <Route path='/users' element={<UserPage />} />
                 <Route path='businesses' element={<BusinessesPage />} />
                 <Route path="/" element={<App />} />
             </Routes>

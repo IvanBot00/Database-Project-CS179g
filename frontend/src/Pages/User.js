@@ -3,17 +3,20 @@ import {
   Row,
 } from 'react-bootstrap';
 
-import { ReviewForm } from '../Forms';
+import { UserForm } from '../Forms';
 
-function Reviews() {
+function User() {
   return (
   <>
     <div className='page-content'>
-      <h1>Reviews Page</h1>
-      <ReviewForm />
+      <h1>Users Page</h1>
     </div>
     <div className='page-content'>
-      <h1>Reviews with highest votes</h1>
+      <h3>Search Users</h3>
+      <UserForm />
+    </div>
+    <div className='page-content'>
+      <h2>Reviews with highest votes</h2>
       <p>The most 
         <Dropdown>
           <Dropdown.Toggle variant='primary'>
@@ -35,4 +38,4 @@ function Reviews() {
   )
 }
 
-export default Reviews;
+export default User;
