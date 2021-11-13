@@ -74,6 +74,7 @@ function User() {
             <Form.Label>Min Reviews</Form.Label>
             <Form.Control
               type='number'
+              onChange={(e) => updateReviewCountMin(e.target.value)}
             />
           </Form.Group>
         </Col>
@@ -82,6 +83,7 @@ function User() {
             <Form.Label>Max Reviews</Form.Label>
             <Form.Control
               type='number'
+              onChange={(e) => updateReviewCountMax(e.target.value)}
             />
           </Form.Group>
         </Col>
@@ -92,6 +94,7 @@ function User() {
             <Form.Label>Min Useful</Form.Label>
             <Form.Control
               type='number'
+              onChange={(e) => updateUsefulMin(e.target.value)}
             />
           </Form.Group>
         </Col>
@@ -100,6 +103,7 @@ function User() {
             <Form.Label>Max Useful</Form.Label>
             <Form.Control
               type='number'
+              onChange={(e) => updateUsefulMax(e.target.value)}
             />
           </Form.Group>
         </Col>
@@ -108,6 +112,7 @@ function User() {
             <Form.Label>Min Funny</Form.Label>
             <Form.Control
               type='number'
+              onChange={(e) => updateFunnyMin(e.target.value)}
             />
           </Form.Group>
         </Col>
@@ -116,6 +121,7 @@ function User() {
             <Form.Label>Max Funny</Form.Label>
             <Form.Control
               type='number'
+              onChange={(e) => updateFunnyMax(e.target.value)}
             />
           </Form.Group>
         </Col>
@@ -124,6 +130,7 @@ function User() {
             <Form.Label>Min Cool</Form.Label>
             <Form.Control
               type='number'
+              onChange={(e) => updateCoolMin(e.target.value)}
             />
           </Form.Group>
         </Col>
@@ -131,6 +138,7 @@ function User() {
           <Form.Label>Max Cool</Form.Label>
           <Form.Control
             type='number'
+            onChange={(e) => updateCoolMax(e.target.value)}
           />
         </Col>
       </Row>
