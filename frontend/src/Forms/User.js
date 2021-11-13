@@ -63,7 +63,7 @@ function User() {
             <Form.Label>Profile Creation Date</Form.Label>
             <Form.Control
               type='date'
-              onChange={(e) => updateYS(e.target.value.format('YYYY-MM-DD'))}
+              onChange={(e) => updateYS(e.target.value)}
             />
           </Form.Group>
         </Col>
