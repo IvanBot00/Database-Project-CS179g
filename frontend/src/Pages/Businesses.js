@@ -14,7 +14,7 @@ function Businesses() {
 
     console.log("requesting user business data");
 
-    let url = "http://cs179g-fall-2021-01.cs.ucr.edu:8080//server/wifi/";
+    let url = "http://cs179g-fall-2021-01.cs.ucr.edu:8080/server/wifi/";
     const request =  {
       params : {
         address : Address,
