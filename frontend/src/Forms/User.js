@@ -7,7 +7,7 @@ import {
   Button
 } from 'react-bootstrap';
 
-function User() {
+function User(props) {
   // const [request, updateRequest] = useState(false);
   const [Name, updateName] = useState('');
   const [Yelping_Since, updateYS] = useState("2000-01-01");
@@ -42,7 +42,7 @@ function User() {
     }
     
     const res = await axios.get(url, request);
-    console.log(res.data);
+    props.setData(res.data);
 }
 
   return (
@@ -149,5 +149,4 @@ function User() {
     </Form>
   );
 }
-
 export default User;
