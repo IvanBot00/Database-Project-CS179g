@@ -8,7 +8,7 @@ function AvgratingsRType() {
 
 
     // let url = "http://cs179g-fall-2021-01.cs.ucr.edu:8888/server/avgratingsRType/"
-    let url2 = "localhost:8888/server/avgratingsRType/";
+    let url2 = "localhost:8000/server/avgratingsRType/";
     let request = "hiiiii";
     const getData = async (e) => {
         e.preventDefault();

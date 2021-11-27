@@ -1,21 +1,46 @@
+import 'bootstrap/dist/css/bootstrap.min.css';  
+// import './bootstrap.min.css';
+import './bootstrap.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-import AvgratingsRType from './components/avgratingsRType';
+import { 
+    BrowserRouter as Router, 
+    Switch,
+    Route,
+} from 'react-router-dom';
+
+import { NavigationBar } from './Navigation'
+
+import { Container } from 'react-bootstrap'
+
+import { 
+    UserPage,
+    BusinessesPage,
+    UserProfilePage,
+} from './Pages'
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <AvgratingsRType />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <Router>
+        <NavigationBar />
+        <Container>
+            <Switch>
+                <Route path='/user/:id'>
+                    <UserProfilePage />
+                </Route>
+                <Route exact path='/user'>
+                    <UserPage />
+                </Route>
+                <Route path='/business'>
+                    <BusinessesPage />
+                </Route>
+                <Route path='/'>
+                    <App />
+                </Route>
+            </Switch>
+        </Container>
+    </Router>
+, document.getElementById('root'));

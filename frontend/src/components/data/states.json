@@ -1,0 +1,126 @@
+[
+    {
+      "name": "MA",
+      "sentiment": -0.024
+    },
+    {
+      "name": "OR",
+      "sentiment": 0.032
+    },
+    {
+      "name": "CO",
+      "sentiment": 0.042
+    },
+    {
+      "name": "FL",
+      "sentiment": 0.057
+    },
+    {
+      "name": "TX",
+      "sentiment": 0.061
+    },
+    {
+      "name": "BC",
+      "sentiment": 0.075
+    },
+    {
+      "name": "GA",
+      "sentiment": 0.082
+    },
+    {
+      "name": "OH",
+      "sentiment": 0.182
+    },
+    {
+      "name": "WA",
+      "sentiment": 0.19
+    },
+    {
+      "name": "KS",
+      "sentiment": 0.209
+    },
+    {
+      "name": "CA",
+      "sentiment": 0.209
+    },
+    {
+      "name": "NH",
+      "sentiment": 0.215
+    },
+    {
+      "name": "AZ",
+      "sentiment": 0.219
+    },
+    {
+      "name": "WY",
+      "sentiment": 0.221
+    },
+    {
+      "name": "NY",
+      "sentiment": 0.221
+    },
+    {
+      "name": "NC",
+      "sentiment": 0.229
+    },
+    {
+      "name": "KY",
+      "sentiment": 0.231
+    },
+    {
+      "name": "MN",
+      "sentiment": 0.239
+    },
+    {
+      "name": "NM",
+      "sentiment": 0.241
+    },
+    {
+      "name": "VA",
+      "sentiment": 0.242
+    },
+    {
+      "name": "IL",
+      "sentiment": 0.25
+    },
+    {
+      "name": "MI",
+      "sentiment": 0.252
+    },
+    {
+      "name": "ABE",
+      "sentiment": 0.255
+    },
+    {
+      "name": "HI",
+      "sentiment": 0.257
+    },
+    {
+      "name": "AL",
+      "sentiment": 0.259
+    },
+    {
+      "name": "ME",
+      "sentiment": 0.266
+    },
+    {
+      "name": "ON",
+      "sentiment": 0.267
+    },
+    {
+      "name": "DE",
+      "sentiment": 0.277
+    },
+    {
+      "name": "OK",
+      "sentiment": 0.29
+    },
+    {
+      "name": "DC",
+      "sentiment": 0.316
+    },
+    {
+      "name": "WI",
+      "sentiment": 0.316
+    }
+  ]
