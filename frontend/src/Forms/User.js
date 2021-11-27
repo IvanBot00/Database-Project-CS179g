@@ -25,7 +25,7 @@ function User(props) {
 
     console.log("requesting user data");
 
-    let url = "http://localhost:8000/server/userSearch/";
+    let url = "http://cs179g-fall-2021-01.cs.ucr.edu:8080/server/userSearch/";
     const request =  {
       params : {
         name : Name,
