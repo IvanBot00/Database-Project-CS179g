@@ -6,13 +6,14 @@ function BusinessSearch(props) {
   const [Name, updateName] = useState('');
   const [City, updateCity] = useState("");
   const [State, updateState] = useState("");
-  const [PostalCode, updatePostalCode] = useState(0);
+  const [PostalCode, updatePostalCode] = useState(-1);
   const [MinStars, updateMinStars] = useState(0);
   const [MinReviews, updateMinReviews] = useState(0);
+
   const getData = async (e) => {
     e.preventDefault();
 
-    console.log("requesting user data");
+    console.log("requesting business data");
 
     let url = "http://cs179g-fall-2021-01.cs.ucr.edu:8080/server/businessSearch/";
     const request =  {
@@ -27,10 +28,11 @@ function BusinessSearch(props) {
     }
     
     const res = await axios.get(url, request);
-    props.setData(res.data);
+    console.log(res.data);
+    // props.setData(res.data);
 }
   return(
-    <Form>
+    <Form onSubmit={getData}>
       <Row>
         <Col>
           <Form.Group>
