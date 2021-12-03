@@ -16,16 +16,19 @@ import {
 export default function BusinessWiFi() {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
+  useEffect( async () => {
     // under construction
 
-    const dummyData = [{"label":"first", "value" : 1}, {"label":"second","value":2}]
-    setData(dummyData);
-    // const url = 'http://localhost:8080/server/wifi/'
-    // const res = axios.get(url);
-    // console.log(res);
-    // setData(res);
+    // const dummyData = [{"label":"first", "value" : 1}, {"label":"second","value":2}]
+    // setData(dummyData);
+    const url = 'http://cs179g-fall-2021-01.cs.ucr.edu:8080/server/wifi/'
+    let res = await axios.get(url);
+    console.log(res);
+    console.log(res.statusText);
+    setData(res.data);
   }, []);
+  
+  // console.log(data)
 
   return (
     <ResponsiveContainer width="100%" height="100%">
@@ -43,11 +46,11 @@ export default function BusinessWiFi() {
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis type='number' />
-        <YAxis type='category' dataKey="label" />
+        <YAxis type='category' dataKey="city" />
         <Tooltip />
         <Legend />
         <ReferenceLine y={0} stroke="#000" />
-        <Bar dataKey="value" fill="#8884d8" />
+        <Bar dataKey="Average Rating" fill="#8884d8" />
       </BarChart>
     </ResponsiveContainer>
   );
