@@ -31,7 +31,7 @@ export default function BusinessWiFi() {
   // console.log(data)
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer width="100%" height="150%">
       <BarChart
         width={500}
         height={300}
@@ -46,11 +46,13 @@ export default function BusinessWiFi() {
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis type='number' />
-        <YAxis type='category' dataKey="city" />
+        {/* <YAxis type='category' dataKey="state wifi" /> */}
+        <YAxis type='category' dataKey="state" />
         <Tooltip />
         <Legend />
         <ReferenceLine y={0} stroke="#000" />
-        <Bar dataKey="Average Rating" fill="#8884d8" />
+        <Bar dataKey="Average Rating WiFi" fill="#8884d8" />
+        <Bar dataKey="Average Rating no WiFi" fill="#11bbd8" />
       </BarChart>
     </ResponsiveContainer>
   );
