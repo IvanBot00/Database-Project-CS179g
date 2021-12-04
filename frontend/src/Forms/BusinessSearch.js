@@ -28,8 +28,8 @@ function BusinessSearch(props) {
     }
     
     const res = await axios.get(url, request);
-    console.log(res.data);
-    // props.setData(res.data);
+    // console.log(res.data);
+    props.setData(res.data);
 }
   return(
     <Form onSubmit={getData}>
