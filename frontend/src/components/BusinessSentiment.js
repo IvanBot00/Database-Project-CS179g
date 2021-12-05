@@ -18,7 +18,7 @@ export default function BusinessSentiment() {
   // const [data, setData] = useState([]);
 
   // useEffect(() => {
-  //   const url = 'http://localhost:8000/server/avgSentimentPerState/'
+  //   const url = 'http://localhost:8080/server/avgSentimentPerState/'
   //   const res = axios.get(url);
   //   console.log(res);
   //   setData(res);
